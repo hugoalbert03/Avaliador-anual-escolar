@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    padding:0px 10px;
+}
+
+header{
+    padding:5px 20px;
+}
+
+h1{
+    text-align:center;
+    background: -webkit-linear-gradient(180deg,#c583c0,#5cb945,#379c86,#fdff7a);
+    padding:5px;
+    border-radius: 5px 30px;
+    box-shadow:5px 5px 10px #00000073;
+    /*border:2px ridge;*/
+    color:rgb(157, 255, 0);
+    text-shadow:2px 2px 3px #0011ff, 4px 4px 2px black;
+}
+
+article{
+    /*margin: 10px 20px*/
+}
+
+.bm{
+    list-style-type:none;
+}

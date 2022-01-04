@@ -61,16 +61,21 @@ function calcNotas(){
         if (res >= 20){
             ap = '<strong style="color:green;">aprovado</strong>'
             imag.src="/img/aprovado.jpg"
+            imag.style="border:dashed 3px green"
+            document.querySelector(".cont-content").style="background:#c9ff73;"
         }else if(res >= 15){
             ap = "<strong style='color:orange'>em recuperação</strong>"
             imag.src="/img/recuperação.jpg"
             var nmb = 20
             var rest = nmb - res
             msg3.innerHTML = `Faltam ${rest.toFixed(1).replace('.',',')} pontos para passar de ano!`
-            
-        }else{
-            ap = "<strong style='color:red;'>reprovado</strong>"
+            imag.style="border:3px dashed #ffb300"
+            document.querySelector(".cont-content").style="background:#ffe873;"
+        }else{        
             imag.src="/img/reprovado.jpg"
+            imag.style="border:3px dashed red"
+            document.querySelector(".cont-content").style="background:#ff7e73; color:white; text-shadow:1px 1px 2px black;"
+            ap = "<strong style='color:red; text-shadow:none;'>reprovado</strong>"
         }
         
        
