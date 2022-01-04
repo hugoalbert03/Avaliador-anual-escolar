@@ -29,3 +29,30 @@ article{
 .bm{
     list-style-type:none;
 }
+#notas{
+    float:left;
+    background:rgb(250, 244, 166);
+    padding:18px 30px;
+    margin-bottom:20px
+}
+
+.cont-content{
+    float:left;
+    padding:18px 30px
+}
+
+section{
+    margin:0px 10px
+}
+article{
+    padding:15px 50px;
+    
+}
+
+footer{
+    clear:both;
+}
+
+#b1,#b2,#b3,#b4{
+    width:80px;
+}
