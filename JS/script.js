@@ -64,13 +64,13 @@ function calcNotas(){
             imag.style="border:dashed 3px green"
             document.querySelector(".cont-content").style="background:#c9ff73;"
         }else if(res >= 15){
-            ap = "<strong style='color:orange'>em recuperação</strong>"
+            ap = "<strong style='color:#ff7700'>em recuperação</strong>"
             imag.src="/img/recuperação.jpg"
             var nmb = 20
             var rest = nmb - res
             msg3.innerHTML = `Faltam ${rest.toFixed(1).replace('.',',')} pontos para passar de ano!`
             imag.style="border:3px dashed #ffb300"
-            document.querySelector(".cont-content").style="background:#ffe873;"
+            document.querySelector(".cont-content").style="background:#ffcc4a;"
         }else{        
             imag.src="/img/reprovado.jpg"
             imag.style="border:3px dashed red"
@@ -89,11 +89,13 @@ function resNotas(){
     msg.innerHTML = `Não há nenhum resultado no momento`
     msg2.innerHTML = ""
     msg3.innerHTML = ""
+    imag.style = "border:none;"
     imag.src = "/img/pexels-olya-kobruseva-5428826.jpg"
+    document.querySelector(".cont-content").style="background-color:none;"
 }
 
 function t_user(){
-    nome = window.prompt("Digite seu nome:")
+    nome = window.prompt("Digite outro nome:")
     while(!nome){
         window.alert("Você não respondeu minha pergunta!")
         nome = prompt("Digite seu nome:")
@@ -101,5 +103,7 @@ function t_user(){
     msg.innerHTML = `Não há nenhum resultado no momento`
     msg2.innerHTML = ""
     msg3.innerHTML = ""
+    imag.style = "border:none;"
     imag.src = "/img/pexels-olya-kobruseva-5428826.jpg"
+    document.querySelector(".cont-content").style="background-color:none;"
 }
