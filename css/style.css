@@ -4,7 +4,7 @@
 }
 
 body{
-    padding:0px 10px;
+    
     background:#1c1c1c;
     color:white;
 }
@@ -15,10 +15,10 @@ header{
 
 h1{
     text-align:center;
-    background: -webkit-linear-gradient(180deg,#c583c0,#5cb945,#379c86,#fdff7a);
+    
     padding:5px;
     border-radius: 5px 30px;
-    box-shadow:5px 5px 10px #00000073;
+    /*box-shadow:5px 5px 10px #00000073;*/
     /*border:2px ridge;*/
     color:rgb(157, 255, 0);
     text-shadow:2px 2px 3px #0011ff, 4px 4px 2px black;
@@ -26,8 +26,19 @@ h1{
 
 article{
     /*margin: 10px 20px*/
+    padding:0px 10px;
 }
 
+input{
+    background:none;
+    border:none;
+    border-bottom: 3px dotted;
+}
+
+#mt{
+    text-align: center;
+    border-bottom: 3px dotted rgb(202, 124, 6);
+}
 .bm{
     list-style-type:none;
     padding:5px 0px
@@ -71,6 +82,7 @@ footer{
     width:80px;
     padding:2px 0px;
     text-align:center;
+    border-bottom:3px dotted #03c000;
 }
 
 #m-space{
@@ -121,4 +133,9 @@ section{
 
 footer{
     text-align:center
+}
+
+.sTop{
+    padding:10px;
+    background: -webkit-linear-gradient(180deg,#c583c0,#5cb945,#379c86,#fdff7a);
 }
