@@ -62,7 +62,7 @@ function calcNotas(){
             ap = '<strong style="color:green;">aprovado</strong>'
             imag.src="/img/aprovado.jpg"
             imag.style="border:dashed 3px green"
-            document.querySelector(".cont-content").style="background:#c9ff73;"
+            document.querySelector(".cont-content").style="background:#c9ff73; color:black;"
         }else if(res >= 15){
             ap = "<strong style='color:#ff7700'>em recuperação</strong>"
             imag.src="/img/recuperação.jpg"
@@ -70,7 +70,7 @@ function calcNotas(){
             var rest = nmb - res
             msg3.innerHTML = `Faltam ${rest.toFixed(1).replace('.',',')} pontos para passar de ano!`
             imag.style="border:3px dashed #ffb300"
-            document.querySelector(".cont-content").style="background:#ffcc4a;"
+            document.querySelector(".cont-content").style="background:#ffcc4a; color:black;"
         }else{        
             imag.src="/img/reprovado.jpg"
             imag.style="border:3px dashed red"

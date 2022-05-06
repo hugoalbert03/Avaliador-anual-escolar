@@ -5,8 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <style>
+            @font-face{
+                font-family:insta-regular;
+                src:url(../font/instagram-new/Demo_Fonts/Fontspring-DEMO-blue_vinyl_regular_ps_ot.otf);
+            }
+
+            @font-face{
+                font-family:twitt-regular;
+                src:url(../font/Pico_winTT/PICOWA__.TTF);
+            }
             body{
-             margin:0;   
+             margin:0; 
+             background:#1c1c1c;  
             }
             div{
                 padding:10px;
@@ -14,11 +24,36 @@
                 background: -webkit-linear-gradient(150deg,yellow,rgb(0, 255, 98),rgb(0, 255, 242));
             }
             a{
-              color:blue; 
+              color:#53e90e; 
+              text-decoration:none;
               
             }
             a:hover{
-                color:#ae00ff;
+                color:#ffa600;
+                text-decoration:underline;
+            }
+            .sth,.std{
+                padding:20px;
+    
+            }
+
+            .std{
+                background:#404140;
+            }
+            table.tb_m{
+                border-radius:10px;
+                background:white;
+                
+            }
+
+            #l_insta,#l_tw,#l_gt{
+                filter:invert();
+                margin:5px;
+                height:30px;
+            }
+
+            .f_logo{
+                font-size:15pt;
             }
         </style>
         <title>Referências sobre Hugo</title>
@@ -26,23 +61,44 @@
     <body>
         <div></div>
         <header style="padding:0px 50px">
-        <a href="../index.html" style="text-decoration:none; color:black;"><h1 style="text-align: center;">Referencias sobre Hugo Albert</h1></a>
+        <a href="../index.html" style="text-decoration:none; color:white;"><h1 style="text-align: center;">Referencias sobre Hugo Albert</h1></a>
         
-            <hr>
+            <!--<hr>-->
         </header>
         <article>
-            <table border="2" style="margin:auto">
+            <table border="2" style="margin:auto" class="tb_m">
                 <tr>
-                    <th style="background:#2AA9E0; color:white">Twitter</th>
-                    <td><a href="https://twitter.com/albert_cs03" id="tw" target="_blank">@albert_cs03</a></td>
+                    <th class="sth" style="background:#2AA9E0; color:white; border-radius:10px 0px 0px 0px; font-family:twitt-regular ;">
+                        <table>
+                            <tr>
+                                <td><img id="l_tw" src="../img/twitter.png" alt="logo twitter"></td>
+                                <td class="f_logo">Twitter</td>
+                            </tr>
+                        </table>
+                    </th>
+                    <td class="std" style="border-radius:0px 10px 0px 0px"><a href="https://twitter.com/albert_cs03" id="tw" target="_blank">@albert_cs03</a></td>
                 </tr>
                 <tr>
-                    <th style="background:-webkit-linear-gradient(50deg,#F5B854,#CA2F8F,#7739AC,#3A7DD5);color:yellow;">Instagram</th>
-                    <td><a href="https://www.instagram.com/albert.cs03/" target="_blank">@albert.cs03</a></td>
+                    <th class="sth" style="background:-webkit-linear-gradient(50deg,#F5B854,#CA2F8F,#7739AC,#3A7DD5);color:white;font-family:insta-regular;">
+                        <table>
+                            <tr>
+                                <td style="background:none;"><img src="../img/instagram.png" alt="logo instagram" id="l_insta"></td>
+                                <td class="f_logo" style="background:none;">Instagram</td>
+                            </tr>
+                        </table>
+                    </th>
+                    <td class="std"><a href="https://www.instagram.com/albert.cs03/" target="_blank">@albert.cs03</a></td>
                 </tr>
                 <tr>
-                    <th style="background:#24292F; color:white">GitHub</th>
-                    <td><a href="https://github.com/hugoalbert03" target="_blank">@hugoalbert03</a></td>
+                    <th class="sth" style="background:#24292F; color:white;border-radius:0px 0px 0px 10px;">
+                        <table>
+                            <tr>
+                                <td><img id="l_gt" src="../img/github.png"></td>
+                                <td class="f_logo" style="font-family:verdana;">GitHub</td>
+                            </tr>
+                        </table>
+                    </th>
+                    <td class="std"style="border-radius:0px 0px 10px 0px;"><a href="https://github.com/hugoalbert03" target="_blank">@hugoalbert03</a></td>
                 </tr>
             </table>
         </article>

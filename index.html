@@ -14,20 +14,25 @@
 		<header>
 			<h1>Notas Escolares</h1>
 		</header>
-		<article>
+		<article style="margin: auto;">
 			<section id="notas">
 				<form>
-					<div class="amt">
-						<h2 id="tnotas">Notas</h2>
+					<div style="text-align:center; margin:10px 5px; font-weight:bold"><h2><label for="mt">Digite o nome da matéria</label></h2>
+					</div>
 					<hr>
-				<ul>
+					<p style="margin: 10px auto; text-align:center;">
+						<input type="text" placeholder="Digite aqui..." id="mt" maxlength="15">
+					</p>
+					<div class="amt">
+						<h2 id="tnotas" style="text-align:center;">Notas</h2>
+					<hr>
+				<ul style="text-align:center; margin:15px 0px;">
 					<li class="bm"><label for="b1">1º Bimestre</label>&nbsp;<input type="number" id="b1" min="1" max="10" placeholder="Bimestre 1"></li>
 					<li class="bm"><label for="b2">2º Bimestre</label>&nbsp;<input type="number" id="b2" min="1" max="10" placeholder="Bimestre 2"></li>
 					<li class="bm"><label for="b3">3º Bimestre</label>&nbsp;<input type="number" id="b3" min="1" max="10" placeholder="Bimestre 3"></li>
 					<li class="bm"><label for="b4">4º Bimestre</label>&nbsp;<input type="number" id="b4" min="1" max="10" placeholder="Bimestre 4"></li> 
 				</ul>
-				<hr>
-				<p style="text-align:center; margin:10px 0px; font-weight:bold"><label for="mt">Digite o nome da matéria</label></p><p><input type="text" placeholder="Digite aqui..." id="mt" maxlength="15"></p>
+				
 				<p style="margin: 10px 0px;">
 					<p id="m-space"><button type="button" id="calcN" onclick="calcNotas()">Calcular Nota</button></p>
 					<p id="m-space"><button type="reset" onclick="resNotas()" id="calcR"> Zerar</button></p>

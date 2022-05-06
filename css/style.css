@@ -5,6 +5,8 @@
 
 body{
     padding:0px 10px;
+    background:#1c1c1c;
+    color:white;
 }
 
 header{
@@ -30,11 +32,22 @@ article{
     list-style-type:none;
     padding:5px 0px
 }
+
+a{
+    color:#04ff00;
+    text-decoration:none;
+}
+
+a:hover{
+    color:#039b00;
+    text-decoration:underline;
+}
 #notas{
     float:left;
     background:rgb(250, 244, 166);
     padding:18px 30px;
-    margin-bottom:20px
+    margin-bottom:20px;
+    color:black;
 }
 
 .cont-content{
