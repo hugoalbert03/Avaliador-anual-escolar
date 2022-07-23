@@ -22,7 +22,16 @@
 					</div>
 					<hr>
 					<p style="margin: 10px auto; text-align:center;">
-						<input type="text" placeholder="Digite aqui..." id="mt" maxlength="15">
+						<input type="text" placeholder="Digite aqui..." id="mt" maxlength="15" list="nome-materia">
+						<datalist id="nome-materia">
+								<option>Português</option>
+								<option>Inglês</option>
+								<option>Matemática</option>
+								<option>Ciências</option>
+								<option>Geografia</option>
+								<option>Artes</option>
+								<option>Educação Física</option>
+						</datalist>
 					</p>
 					<div class="amt">
 						<h2 id="tnotas" style="text-align:center;">Notas</h2>
@@ -37,7 +46,7 @@
 				<p style="margin: 10px 0px;">
 					<p id="m-space"><button type="button" id="calcN" onclick="calcNotas()">Calcular Nota</button></p>
 					<p id="m-space"><button type="reset" onclick="resNotas()" id="calcR"> Zerar</button></p>
-					<p id="m-space"><button type="reset" id="TRuser" onclick="t_user()" >Trocar de Nome</button></p>
+					<p id="m-space"><button type="reset" id="TRuser" onclick="t_user()" >Trocar Usuário</button></p>
 				</p>
 					</div>
 				</form>
