@@ -45,7 +45,7 @@ function calcNotas(){
             val = 4
         }
         var val_res = `${val}º Bimestre`
-        window.alert(`Numeração exedida no ${val_res}`)
+        window.alert(`Numeração excedida no ${val_res}`)
     }else if(String(nMat.value).length <= 4){
         window.alert(`Desculpe ${nome}, mas os numeros de caracteres para a matéria estão vazios ou  insuficiente para a autenticação!`)
     }else{
