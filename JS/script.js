@@ -63,6 +63,7 @@ function calcNotas(){
             imag.src="/img/aprovado.jpg"
             imag.style="border:dashed 3px green"
             document.querySelector(".cont-content").style="background:#c9ff73; color:black;"
+            msg3.innerHTML = ""
         }else if(res >= 15){
             ap = "<strong style='color:#ff7700'>em recuperação</strong>"
             imag.src="/img/recuperação.jpg"
